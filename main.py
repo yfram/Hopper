@@ -42,7 +42,7 @@ def solve(label):
     print(label)
     if label == "Apples":
         change_state(State.APPLE)
-    if label == "Pears":
+    elif label == "Pears":
         change_state(State.PEAR)
     else:
         raise Exception("No label found")
