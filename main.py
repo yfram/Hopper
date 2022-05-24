@@ -4,7 +4,7 @@ from lobe import ImageModel
 
 camera = PiCamera()
 
-model = ImageModel.load('/home/dir/Downloads/Hopper/Tflite files/Apples')
+model = ImageModel.load('/home/pi/Downloads/Hopper/Tflite files/Apples')
 
 # Take Photo
 def take_photo():
