@@ -1,4 +1,3 @@
-import imp
 from picamera import PiCamera
 from time import sleep
 from lobe import ImageModel
@@ -12,7 +11,7 @@ class State(Enum):
 camera = PiCamera()
 model = ImageModel.load('/home/pi/Downloads/Hopper/Tflite files/Apples')
 
-motor_state = State.APPLE
+motor_state = State.PEAR
 motor = Motor(forward=4, backward=14)
 if motor.value == 1:
     motor.stop()
