@@ -27,4 +27,4 @@ def solve(label):
 take_photo()
 # Run photo through Lobe TF model
 result = model.predict_from_file('/home/pi/Pictures/image.jpg')
-solve(result)
+solve(result.Prediction)
